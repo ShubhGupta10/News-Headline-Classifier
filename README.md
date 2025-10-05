@@ -1,34 +1,37 @@
-📰 News Headline Classifier
+from pathlib import Path
 
-A simple NLP-powered web app that classifies news headlines into categories like Business, Sci-Fi/Tech, Sports, or World.
+# Define README content
+readme_content = """# 📰 News Headline Classifier
+
+A simple NLP-powered web app that classifies news headlines into categories like **Business**, **Sci-Fi/Tech**, **Sports**, or **World**.  
 Built as a personal project to explore text classification and experiment with machine learning on real-world text data.
 
-🚀 Features
+---
 
-Classifies any news headline into one of four categories.
+## 🚀 Features
 
-Interactive dashboard built with NiceGUI.
+- Classifies any news headline into one of four categories.
+- Interactive dashboard built with **NiceGUI**.
+- Uses **TF-IDF Vectorization** and a **Multinomial Naive Bayes** model from scikit-learn.
+- Lightweight, fast, and easy to extend with new categories.
 
-Uses TF-IDF Vectorization and a Multinomial Naive Bayes model from scikit-learn.
+---
 
-Lightweight, fast, and easy to extend with new categories.
+## 🧠 Tech Stack
 
-🧠 Tech Stack
+- **Language:** Python  
+- **Libraries:** scikit-learn, pandas, re, pickle, nicegui  
+- **Core ML Tools:** `TfidfVectorizer`, `MultinomialNB`  
 
-Language: Python
+---
 
-Libraries: scikit-learn, pandas, re, pickle, nicegui
-
-Core ML Tools: TfidfVectorizer, MultinomialNB
-
-⚙️ Installation
+## ⚙️ Installation
 
 Clone the repository:
-
+```bash
 git clone https://github.com/ShubhGupta10/news-headline-classifier.git
 cd news-headline-classifier
-
-
+```
 Install dependencies:
 
 pip install -r requirements.txt
