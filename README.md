@@ -1,7 +1,4 @@
-from pathlib import Path
-
-# Define README content
-readme_content = """# 📰 News Headline Classifier
+# 📰 News Headline Classifier
 
 A simple NLP-powered web app that classifies news headlines into categories like **Business**, **Sci-Fi/Tech**, **Sports**, or **World**.  
 Built as a personal project to explore text classification and experiment with machine learning on real-world text data.
@@ -33,32 +30,35 @@ git clone https://github.com/ShubhGupta10/news-headline-classifier.git
 cd news-headline-classifier
 ```
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 
 Run the app:
-
+```bash
 python app.py
-
+```
 
 Open your browser and go to:
-
+```bash
 http://localhost:8080
+```
+---
+## 💡 How It Works
 
-💡 How It Works
+- The model reads the input headline.
 
-The model reads the input headline.
+- Text is cleaned and vectorized using TF-IDF.
 
-Text is cleaned and vectorized using TF-IDF.
+- The trained MultinomialNB classifier predicts the news category.
 
-The trained MultinomialNB classifier predicts the news category.
+- The dashboard instantly displays the result.
 
-The dashboard instantly displays the result.
+- A pre-trained model file (model.pkl) is already included — no retraining required.
 
-A pre-trained model file (model.pkl) is already included — no retraining required.
-
-🗂️ Project Structure
+---
+## 🗂️ Project Structure
+```bash
 news-headline-classifier/
 │
 ├── app.py                # Main NiceGUI dashboard
@@ -67,13 +67,15 @@ news-headline-classifier/
 ├── requirements.txt      # Dependencies
 ├── /data                 # Dataset used for training
 └── README.md
-
-🖼️ Demo
+```
+---
+## 🖼️ Demo
 
 <img width="935" height="540" alt="image" src="https://github.com/user-attachments/assets/8b7ece8b-6a0d-4db0-9c51-8741f9183b96" />
 
-
-👨‍💻 Author
+---
+## 👨‍💻 Author
 
 Created by Shubh Gupta
+
 GitHub: [Shubh Gupta](https://github.com/ShubhGupta10)
